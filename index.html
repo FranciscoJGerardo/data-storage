@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background-desktop">
+    </div>
+    <div class="general-container">
+      <div class="container-logo">
+        <div class="logo">
+          <img class="logo-hero" src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="icons-container">
+          <div class="icon-cont">
+            <img class="icons" src="images/icon-document.svg" alt="document" />
+          </div>
+          <div class="icon-cont">
+            <img class="icons" src="images/icon-folder.svg" alt="folder" />
+          </div>
+          <div class="icon-cont">
+            <img class="icons" src="images/icon-upload.svg" alt="upload" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-slider">
+        <div class="info-container">
+          You´ve used <span style="color: white" id="SelectValue">0</span> GB of
+          your storage
+        </div>
+        <div class="slider-cont">
+          <input
+            class="slider"
+            id="slider"
+            type="range"
+            min="0"
+            max="1000"
+            value="100"
+          />
+
+          <div class="num-gb">
+              <p>0 GB</p>
+          </div>
+
+        </div>
+        <div class="num-gb num-gb2">
+          <p>1000 GB</p>
+      </div>
+        <div class="last-gb">
+          <span id="N1" class="first-number">0</span>
+          <span id="N2" class="second_number">0</span>
+          <span id="N3" class="third-numeber">0</span>
+          <p id="P">GB left</p>
+        </div>
+        <div class="triangulo"></div>
+      </div>
+    </div>
+
+    <script src="rules.js"></script>
+  </body>
+</html>
